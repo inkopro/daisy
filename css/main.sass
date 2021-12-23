@@ -1,0 +1,588 @@
+// font-family: 'Open Sans', sans-serif
+// font-family: 'Roboto', sans-serif
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;400;500&display=swap')
+
+$accent: #fc635e
+h1, h2, h3, h4, h5, h6, p
+	margin: 0
+	padding: 0
+*
+	box-sizing: border-box
+body
+	margin: 0
+	padding: 0
+	font-family: 'Roboto', sans-serif
+
+.container
+	max-width: 1260px
+	margin: 0 auto
+	padding: 0 15px
+
+.section__heading
+	text-align: center
+.section__heading-title
+	font-weight: 500
+	color: #868686
+	text-transform: uppercase
+	font-size: 28px
+	position: relative
+	margin-bottom: 32px
+.section__heading-title:before
+	content: ''
+	width: 337px
+	height: 1px
+	background-color: #adadad
+	position: absolute
+	bottom: -12px
+	right: 450px
+
+.section__heading-title span
+	color: $accent
+.section__heading-subtitle
+	font-size: 20px
+	font-weight: 300
+	color: #adadad
+// Header
+
+.header
+	background: url(../img/header/background.png) no-repeat center/cover
+	padding: 22px 0 28px
+.menu__mobile
+	display: none
+.header__top
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 193px
+
+.header__top-logo
+	display: flex
+	align-items: center
+	font-size: 21px
+	color: #fff
+	text-decoration: none
+	font-weight: 700
+.header__top-logo img
+	margin-right: 10px
+
+.header__menu
+	display: flex
+	padding: 0
+	margin: 0
+
+	.header__menu-item
+		list-style-type: none
+		margin-right: 60px
+	.header__menu-item:last-child
+		margin-right: 0
+	.header__menu-item a
+		font-family: 'Open Sans', sans-serif
+		color: #fff
+		text-decoration: none
+		font-size: 16px
+		text-transform: uppercase
+		transition: .5s
+	.header__menu-item a:hover
+		color: $accent
+		border-bottom: 3px solid $accent
+		padding-bottom: 5px
+
+.header__content
+	text-align: center
+
+	.header__content-title
+		color: #fff
+		text-transform: uppercase
+		font-size: 51px
+		margin-bottom: 28px
+		font-weight: 400
+	.header__content-title span
+		color: $accent
+
+	.header__content-subtitle
+		font-size: 24px
+		color: #fff
+		margin-bottom: 48px
+
+.header__content-btn
+	display: inline-block
+	padding: 13px 36px
+	margin-bottom: 241px
+	border: 2px solid $accent
+	border-radius: 5px
+	color: $accent
+	text-decoration: none
+	font-size: 24px
+	transition: .5s
+
+.header__content-btn:hover
+	background: $accent
+	color: #fff
+
+.btn__bottom
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 0 auto
+.btn__bottom a
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff
+	text-decoration: none
+	font-size: 30px
+	width: 45px
+	height: 45px
+	background-color: $accent
+	border-radius: 50%
+	transition: .5s
+.btn__bottom a:hover
+	background-color: transparent
+	border: 3px solid $accent
+	color: $accent
+
+// receive
+
+.receive
+	padding: 67px 15px
+
+.receive__iner
+	margin: 81px 0 80px
+	display: flex
+	justify-content: space-around
+	text-align: center
+.receive__item
+.receive__item-img
+	margin-bottom: 27px
+.receive__item-title
+	font-size: 20px
+	font-weight: 500
+	color: #868686
+	text-transform: uppercase
+	margin-bottom: 25px
+.receive__item-subtitle
+	font-size: 15px
+	font-weight: 300
+	color: #adadad
+
+.btn__bottom_op a
+	background-color: transparent
+	color: $accent
+	border: 1px solid $accent
+.btn__bottom_op a:hover
+	background-color: $accent
+	color: #fff
+
+// Expand
+
+.expand
+	background: url(../img/expand/expand.png) no-repeat center/cover
+	padding: 91px 0 20px
+
+.expand__iner
+	text-align: center
+	padding: 150px 0
+	border: 8px solid rgba(255, 255, 255, .1)
+	margin-bottom: 50px
+
+	.header__content-btn
+		margin-bottom: 0
+
+.expand__iner-title
+	font-size: 50px
+	text-transform: uppercase
+	color: #fff
+	font-weight: 500
+	margin-bottom: 40px
+.expand__iner-title span
+	color: $accent
+
+// Process
+.process
+	padding: 51px 0 21px
+
+.process__iner
+	margin: 150px 0
+	display: flex
+	justify-content: space-between
+	text-align: center
+
+.process__item
+	width: 250px
+
+.process__item-icon
+	width: 38px
+	height: 38px
+	background: $accent
+	border-radius: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 0 auto 20px
+
+.process__item-title
+	text-transform: uppercase
+	font-size: 24px
+	font-weight: 500
+	color: #868686
+	margin-bottom: 20px
+
+.process__item-title span
+	color: $accent
+
+.process__item-text
+	font-weight: 300
+	font-size: 15px
+	color: #9f9f9f
+	padding-bottom: 20px
+	border-bottom: 1px solid rgba($accent, .3 )
+
+// Features
+.features
+	padding: 60px 0px 15px
+	// min-height: 576px
+
+.features .section__heading
+	margin-bottom: 80px
+
+.features_gray
+	padding-top: 60px
+	background: #f2f2f2
+
+.features__iner
+	display: flex
+	justify-content: space-around
+	height: 350px
+
+.features__iner-left
+	flex-basis: 40%
+
+.features__title
+	font-size: 28px
+	font-weight: 500
+	color: #868686
+	text-transform: uppercase
+	border-left: 10px solid $accent
+	padding-left: 10px
+	margin-bottom: 27px
+
+.features__subtitle
+	font-size: 15px
+	font-weight: 300
+	color: #9e9898
+	margin-bottom: 40px
+
+.features__iner-right_w
+	flex-basis: 40%
+
+.features__title_right
+	border-left: none
+	padding-left: 0
+	border-right: 10px solid $accent
+	max-width: 200px
+
+.features__btn
+	background-color: $accent
+	color: #fff
+.features__btn:hover
+	background-color: transparent
+	color: $accent
+
+// Portfolio
+
+.portfolio
+	padding: 80px 0px 14px
+	.header__content-btn
+		display: block
+		width: 300px
+		margin: 0 auto 25px
+.portfolio__controls
+	display: flex
+	justify-content: space-around
+	align-items: center
+	margin-bottom: 45px
+	border-top: 1px solid #adadad
+	border-bottom: 1px solid #adadad
+	padding: 15px 0
+
+.portfolio__controls button
+	cursor: pointer
+	background: transparent
+	color: $accent
+	font-weight: 300
+	font-size: 20px
+	border: none
+	text-transform: uppercase
+	transition: .5s
+
+.portfolio__controls button:hover
+	opacity: .8
+
+.portfolio__title
+	font-size: 28px
+	font-weight: 500
+	text-transform: uppercase
+	color: #868686
+	position: relative
+	margin-bottom: 40px
+	text-align: center
+
+.portfolio__title:before
+	content: ''
+	position: absolute
+	width: 142px
+	height: 1px
+	background-color: #adadad
+	bottom: -10px
+
+.portfolio__iner
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	margin-bottom: 60px
+
+.portfolio__iner div
+	width: 250px
+	height: 180px
+
+.portfolio__item
+	margin: 10px
+	&:hover .fill
+		display: block
+		cursor: pointer
+#ex1
+	background: url(../img/portfolio/1.png) no-repeat center center/cover
+
+#ex2
+	background: url(../img/portfolio/2.png) no-repeat center center/cover
+
+#ex3
+	background: url(../img/portfolio/3.png) no-repeat center center/cover
+
+#ex4
+	background: url(../img/portfolio/4.png) no-repeat center center/cover
+
+#ex5
+	background: url(../img/portfolio/5.png) no-repeat center center/cover
+
+#ex6
+	background: url(../img/portfolio/6.png) no-repeat center center/cover
+
+.fill
+	font-size: 20px
+	padding: 10px 0px 0px 10px
+	color: #fff
+	font-weight: 300
+	background: url(../img/portfolio/plus.png) no-repeat center rgba(250, 72, 72, .7)
+	display: none
+	position: relative
+
+// Team
+
+.team
+	padding: 54px 0 35px
+	background: #f2f2f2
+
+.team__title
+	color: #565656
+.team__title span
+	color: $accent
+
+.team__iner
+	display: flex
+	justify-content: space-around
+	margin-top: 73px
+	text-align: center
+.team__item-img
+	margin-bottom: 25px
+.team__item-title
+	font-size: 28px
+	font-weight: 500
+	color: #565656
+	margin-bottom: 15px
+
+.team__item-title span
+	color: $accent
+
+.team__item-subtitle
+	font-size: 20px
+	font-weight: 300
+	color: #565656
+	margin-bottom: 15px
+	text-transform: uppercase
+
+.team__item-link
+	text-decoration: none
+	font-size: 23px
+	padding: 5px 0px
+	margin: 0 10px
+	display: inline-block
+	width: 37px
+	height: 37px
+	color: #fff
+	border-radius: 50%
+	background: #565656
+	transition: .5s
+.team__item-link:hover
+	background: $accent
+
+// Footer
+
+.footer
+	background: $accent
+	text-align: center
+	padding: 20px 0
+
+.footer__text a
+	color: #fff
+	font-weight: 300
+	text-decoration: none
+	font-size: 30px
+	border: 1px solid #fff
+	border-radius: 50%
+	height: 45px
+	width: 45px
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 0 auto
+	transition: .5s
+
+.footer__text a:hover
+	color: $accent
+	background: #fff
+
+// Menu-Burger
+.menu__burger
+	display: block
+	overflow: hidden
+	margin: 0
+	padding: 0
+	width: 40px
+	height: 40px
+	font-size: 0
+	background-color: $accent
+	border-radius: 5px
+	position: relative
+
+.menu__burger span
+	position: absolute
+	display: block
+	background-color: #fff
+	height: 2px
+	width: 30px
+	top: 18px
+	left: 5px
+	right: 5px
+	transition: background 0s 0.3s
+
+.menu__burger span::after,
+.menu__burger span::before
+	content: ''
+	display: block
+	height: 2px
+	width: 100%
+	background-color: #fff
+	position: absolute
+	transition-duration: 0.3s, 0.3s
+	transition-delay: 0.3s, 0s
+
+.menu__burger span::after
+	top: -8px
+
+.menu__burger span::before
+	bottom: -8px
+
+.menu__burger.close span
+	background: none
+
+.menu__burger.close span::after
+	top: 0
+	transform: rotate(45deg)
+
+.menu__burger.close span::before
+	bottom: 0
+	transform: rotate(-45deg)
+
+// Media
+
+@media (max-width: 991.98px)
+	.section__heading-title:before, .portfolio__title:before
+		display: none
+
+@media (max-width: 767.98px)
+
+	.menu__mobile
+		display: flex
+		flex-direction: column
+		margin-bottom: 50px
+
+	.header__menu_mobile
+		display: none
+		text-align: center
+
+	.header__menu .header__menu-item
+		margin: 0
+		padding: 15px 0
+
+	.menu__iner
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	.header__top
+		display: none
+
+	.receive__iner
+		flex-wrap: wrap
+		margin: 50px 0
+
+	.receive__item
+		margin-bottom: 30px
+
+	.receive__item:last-child
+		margin-bottom: 0
+
+	.expand__iner
+		padding: 70px 0
+
+	.process__iner
+		flex-wrap: wrap
+		margin: 50px 0
+
+	.process__item
+		margin-bottom: 30px
+
+	.features__iner
+		flex-wrap: wrap
+		height: auto
+
+	.features__iner-left, .features__iner-right_w
+		flex-basis: 100%
+
+	.features__iner-left_w
+		flex-basis: 50%
+		margin-bottom: 30px
+
+	.portfolio__controls
+		flex-wrap: wrap
+
+	.team__iner
+		flex-wrap: wrap
+
+	.team__item
+		margin-bottom: 30px
+
+	.team__item:last-child
+		margin-bottom: 0
+
+@media (max-width: 575.98px)
+
+	.header
+		.header__content-btn
+			margin-bottom: 50px
+	.features__iner-right img, .features__iner-left img
+		width: 300px
+
+	.portfolio__controls
+		justify-content: center
